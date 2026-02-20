@@ -1,0 +1,3 @@
+Turn in a URL for a website written in React that displays short quotes (or something similar) in cards.  Have 3 tabs that organize this information in 3 different ways.  Have 3 top level categories with different categories underneath each of those top level categories.  That different organization in each of the 3 subcategories is what is meant by "organize this information in 3 different ways."    We're after a single two-level hierarchy design for the information.  
+
+If you used generative AI, also submit a pdf containing what you did using AI, what you did to the AI output, and what you thought of AI's performance in this situation.  
