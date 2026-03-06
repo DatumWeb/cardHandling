@@ -25,6 +25,37 @@ h1 {
   color: #1a1a1a;
 }
 
+.app-header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.main-nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-link {
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.nav-link:hover {
+  background: #eee;
+}
+
+.nav-link.active {
+  background: #1a1a1a;
+  color: #fff;
+  border-color: #1a1a1a;
+}
+
 .tabs {
   display: flex;
   gap: 0.5rem;
@@ -133,4 +164,49 @@ h1 {
   line-height: 1.5;
   font-style: italic;
   color: #333;
+}
+
+.cardsort-wrapper {
+  margin-top: 0.5rem;
+}
+
+.cardsort-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.cardsort-instructions {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.cardsort-board {
+  position: relative;
+  margin-top: 0.5rem;
+  border-radius: 10px;
+  border: 1px dashed #bbb;
+  background: #fdfdfd;
+  /* ~15 rows of cards at 90px + padding so all 44 cards fit */
+  min-height: 1400px;
+  overflow: auto;
+}
+
+.cardsort-card {
+  position: absolute;
+  max-width: 230px;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #d0d0d0;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  font-size: 0.85rem;
+  text-align: left;
+  cursor: grab;
+}
+
+.cardsort-card.dragging {
+  cursor: grabbing;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
 }
